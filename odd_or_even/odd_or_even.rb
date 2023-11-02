@@ -2,12 +2,14 @@ print("I need you type a integer number: ")
 
 integer_number = gets.to_i
 
-if (integer_number % 2) == 0
+remainder = integer_number % 2
+
+if remainder == 0
   answer = "Even"
-elsif (integer_number % 2) == 1
+elsif remainder == 1
   answer = "Odd"
 else
-  answer = "Invalid number"
+  answer = "Invalid"
 end
 
 puts("The number is #{answer}")
